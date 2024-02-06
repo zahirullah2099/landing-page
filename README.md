@@ -1,1 +1,1 @@
-# landing-page
+in this repository i've create a responsive landing page using html, css and javascript

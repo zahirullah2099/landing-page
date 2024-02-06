@@ -1,0 +1,118 @@
+/* media queries start */
+/* my media queries */
+/* @media (width < 1200px){
+    nav{
+        width: 1100px; 
+    }
+     
+}
+@media (width < 1100px){
+    nav{
+        width: 1000px; 
+    }
+    .nav_links{
+          gap: 20px;
+    }
+}
+@media (width < 1000){
+    nav{
+        width: 800px; 
+    }
+    .nav_links{
+        gap: 20px;
+  } 
+      
+}*/
+@media (width < 900px){
+    nav{ 
+        /* max-width: 600px; 
+        justify-content: space-evenly;  */
+        padding: 16px 5px;
+    }
+    .nav_links{
+        gap: 20px;
+    }
+    .link {
+        /* display: none; */
+    }
+    .header_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .header_image{
+        grid-area: 1/1/2/2;
+    }
+    .story_container{ 
+        grid-template-columns: repeat(1,1fr); 
+    }
+    .story_image{
+        grid-area: 1/1/2/2;
+    }
+    .price_grid{ 
+        grid-template-columns: repeat(2,1fr); 
+    } 
+    .client_grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+} 
+@media (width < 730px) {
+    .nav_links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    .nav_links.show {
+        display: flex;
+        opacity: 1;
+    }
+
+    .link {
+        margin: 0;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #555;
+        opacity: 0;
+        animation: fadeIn 0.5s ease-in-out forwards;
+    }
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+    .menu_icon {
+        display: block;
+    }
+}
+@media (width < 600px){ 
+    .price_grid{ 
+        grid-template-columns: repeat(1,1fr);
+    } 
+    .client_grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer_bar{
+        flex-direction: column;
+    } 
+} 
+@media (width < 450px){
+    .banner_container form {
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* gap: 16px;  */
+    
+    }
+}
